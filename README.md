@@ -1,6 +1,29 @@
 # LoxoneAutoUpdate
 Automatically pulls the latest deb package of the Loxone Linux app and installs it.
 
+## Usage
+```bash
+sudo ./LoxoneAutoUpdate.sh
+```
+
+Output:
+```bash 
+Searching for Updates...
+Latest version detected: 15.3.3
+Installed-Version: 15.3.2-12290
+Downloading update package from https://updatefiles.loxone.com/linux/Release/153320250311-amd64.deb
+loxonelatest.deb                                      100%[========================================================================================================================>]  73,19M  5,47MB/s    in 13s     
+(Lese Datenbank ... 230589 Dateien und Verzeichnisse sind derzeit installiert.)
+Vorbereitung zum Entpacken von loxonelatest.deb ...
+Entpacken von kerberos (15.3.3-12293) über (15.3.2-12290) ...
+kerberos (15.3.3-12293) wird eingerichtet ...
+Trigger für hicolor-icon-theme (0.17-2) werden verarbeitet ...
+Trigger für mailcap (3.70+nmu1ubuntu1) werden verarbeitet ...
+Trigger für gnome-menus (3.36.0-1ubuntu3) werden verarbeitet ...
+Trigger für desktop-file-utils (0.26-1ubuntu3) werden verarbeitet ...
+Fininshed install, removing old files...
+Done!
+```
 
 > [!IMPORTANT]
 > The app needs to be restarted manually for the version change to take effect.
